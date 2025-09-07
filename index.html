@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <a href="#home" class="active">Home Page</a>
+      <a href="#faculty">Faculty Directory</a>
+      <a href="#courses">Course Offerings</a>
+      <a href="#resources">Student Resources Section</a>
+      <a href="#announcements">Announcements & Events</a>
+      <a href="#calendar">Department Calendars</a>
+      <a href="#contact">Contact Form</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="text">
+      <h1>Welcome</h1>
+      <h2>to</h2>
+      <h3>Bachelor of Science in Information Technology</h3>
+      <h4>Department</h4>
+    </div>
+  </section>
+
+  <!-- Faculty Directory Section -->
+  <section id="faculty" class="section">
+    <h2>Faculty Directory</h2>
+    <p>Meet our esteemed faculty members of the IT Department.</p>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" id="search" placeholder="Search faculty by name..." onkeyup="searchFaculty()">
+    </div>
+
+    <!-- Faculty List -->
+    <div class="faculty-list" id="faculty-list">
+      <!-- Faculty cards will appear here -->
+    </div>
+
+    <!-- Add Faculty Form -->
+    <div class="add-form">
+      <h3>Add New Faculty</h3>
+      <input type="text" id="name" placeholder="Full Name" required><br>
+      <input type="text" id="title" placeholder="Title/Position" required><br>
+      <input type="email" id="contact" placeholder="Email Address" required><br>
+      <button onclick="addFaculty()">Add Faculty</button>
+    </div>
+  </section>
+
+  <!-- Placeholders for other sections -->
+  <section id="courses"><h2>Course Offerings</h2></section>
+  <section id="resources"><h2>Student Resources Section</h2></section>
+  <section id="announcements"><h2>Announcements & Events</h2></section>
+  <section id="calendar"><h2>Department Calendars</h2></section>
+  <section id="contact"><h2>Contact Form</h2></section>
+
+  <script src="/Midterm_Project.js"></script>
+</body>
+</html>
